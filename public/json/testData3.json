@@ -1,0 +1,49 @@
+{	
+	"type": "horizontalBar",
+	"data": {
+		"labels": ["apple", "banana", "orange", "lemon", "punch", "melon", "pear", "cherry", "mango", "strawberry", "coconut"],
+		"datasets": [{
+			"label": "fruit value",
+			"data": ["23", "21", "19", "18", "17", "16", "16", "15", "11", "9", "9"],
+			"backgroundColor": "rgba(255,207,47,0.6)",
+			"borderColor": "rgba(255,207,47,0.6)",
+			"borderWidth": "2",
+			"hoverBorderWidth": "0"
+		}]
+	},
+	"options": {
+		"scales": {
+			"yAxes": [{
+				"categoryPercentage": "1.5",
+				"barPercentage": "0.5",
+				"gridLines": {
+					"display":false
+				}
+			}],
+			"xAxes": [{
+				"gridLines": {
+					"display":false
+				}
+			}]
+		},
+		"elements": {
+			"rectangle": {
+				"borderSkipped": "center"
+			}
+		},
+		"tooltips": {
+			"enabled": false
+		},
+		"hover": {
+			"animationDuration": "0"
+		},
+		"plugins": {
+			"datalabels": {
+				"color": "rgb(0,0,0)",
+				"anchor": "end",
+				"align": "end"	
+			}
+		}
+	}
+}
+

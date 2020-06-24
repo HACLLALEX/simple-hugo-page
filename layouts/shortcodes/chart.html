@@ -1,0 +1,21 @@
+<div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<canvas id="{{ .Get "id"}}" width="600px" height="400px"></canvas>
+
+	{{ if .Get "id" }}
+    <script>
+		var json = {{ .Get "json"}};
+		
+		$.getJSON(json, function (result) { 
+			var barChart = new Chart($("#{{ .Get "id"}}"), result);
+		})
+		.fail(function (jqxhr, status, error) { 
+			console.log('alert', status, error) 
+		});
+		
+	
+	</script>
+    {{ end }}
+</div>

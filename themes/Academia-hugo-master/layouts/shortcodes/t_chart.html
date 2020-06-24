@@ -1,0 +1,67 @@
+<div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<div id="shortCodeChart" class="chartInfo">
+	</div>
+
+	{{ if .Get "js" }}
+    <script src="{{ .Get "js"}}"></script>
+	
+    {{ end }}
+    <script>
+		var json = {{ .Get "json"}};
+		var id = {{ .Get "id"}};
+		var canvasCount = 0;
+		console.log("called from shortcode");
+		console.log(json);
+		if(json !=""){
+		$.getJSON(json, function (result) { 
+			console.log("getJson sc");
+			console.log(result);
+			//canvasCount = $('canvas').length;
+			//console.log("canvasCount: " + canvasCount);
+			var count = $('.chart').length;
+			console.log("count sc:" + count);
+			var num = 0;
+			if(count == 0){
+				console.log("no .chart sc");
+				console.log("create a new canvas and add classname '.chart' sc");
+				var t_canvas = document.createElement("canvas");
+				t_canvas.style.width = "600px";
+				t_canvas.style.height = "400px";
+				t_canvas.setAttribute('class','chart');
+				$(".chartInfo")[0].appendChild(t_canvas);
+				var barChart = new Chart($(".chart")[0], result);
+		
+			} else if((count != 0)){
+				//console.log($('.chart'));
+				console.log("already have .chart sc" );
+				console.log("create a new canvas and add classname '.chart' sc");
+				
+				var t_canvas = document.createElement("canvas");
+				for(var i=0;i<count;i++){
+					num++;
+					console.log("num: " + num);
+					t_canvas.style.width = "600px";
+					t_canvas.style.height = "400px";
+					t_canvas.setAttribute('class','chart');
+					$(".chartInfo")[num].appendChild(t_canvas);
+				}
+				console.log($(".chartInfo")[num]);
+				var barChart = new Chart($(".chart")[num], result);
+			}
+		})
+		.fail(function (jqxhr, status, error) { 
+			console.log('alert', status, error) }
+		);
+	} else {
+		console.log("empty sc");
+		console.log("create a empty canvas and add class name sc");
+		var t_canvas = document.createElement("canvas");
+		t_canvas.setAttribute('class','chart');
+		$(".chartInfo")[0].appendChild(t_canvas);
+	}
+		<!--chart(id,json);-->
+	</script>
+</div>

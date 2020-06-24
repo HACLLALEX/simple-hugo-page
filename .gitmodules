@@ -1,0 +1,6 @@
+[submodule "themes/academia"]
+	path = themes/academia
+	url = https://github.com/themefisher/Academia-hugo.git
+[submodule "themes/academia-hugo"]
+	path = themes/academia-hugo
+	url = https://github.com/themefisher/Academia-hugo.git

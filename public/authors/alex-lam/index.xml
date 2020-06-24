@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alex Lam on Academia</title>
+    <link>https://academia-hugo.netlify.com/authors/alex-lam/</link>
+    <description>Recent content in Alex Lam on Academia</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://academia-hugo.netlify.com/authors/alex-lam/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Study Hugo</title>
+      <link>https://academia-hugo.netlify.com/post/test/</link>
+      <pubDate>Fri, 19 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://academia-hugo.netlify.com/post/test/</guid>
+      <description>&lt;p&gt;To using Hugo to build a website. First we need to install the Hugo framework.&lt;/p&gt;
+&lt;h2 id=&#34;1-install-hugo&#34;&gt;1. Install Hugo&lt;/h2&gt;
+&lt;p&gt;Go to &lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;Install Hugo&lt;/a&gt; And download the .zip file like&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;hugo_0.72.0_Windows-64bit.zip&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Unzip to your hugo file and click the &lt;strong&gt;hugo.exe&lt;/strong&gt;. The hugo set up now.&lt;/p&gt;
+&lt;h2 id=&#34;2-add-themes&#34;&gt;2. Add Themes&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;./userGuide/add_themes_1.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to &lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;Hugo Themes&lt;/a&gt; .&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;Themes&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Choose a Themes.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;Download&lt;/strong&gt; button. It will&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;./userGuide/add_themes_3.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Click the &lt;strong&gt;Clone&lt;/strong&gt; button.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Download ZIP&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Unzip the file and put it into your hugo file &lt;strong&gt;themes&lt;/strong&gt; folder.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;./userGuide/add_themes_5.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to the path and find the config file&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;config/_default&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;edit the config file as a notepad.&lt;/li&gt;
+&lt;li&gt;find the &lt;strong&gt;theme = &amp;quot; &amp;ldquo;&lt;/strong&gt; and change the name of theme. The name sould be the same with your theme folder.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
