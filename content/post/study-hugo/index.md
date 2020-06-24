@@ -52,25 +52,19 @@ gallery_item:
   caption: Strawberry
   image: theme-strawberry.png
 ---
-To using Hugo to build a website. First we need to install the Hugo framework.
-
-
 
 ## 1. Quick Start
 
-1. Go to [our github](https://github.com/HACLLALEX/hugo-with-chartjs) and download the simple page. 
+![png](./userGuide/quick_start_1.png)
+
+1. Go to [our github](https://github.com/HACLLALEX/simple-hugo-page) . Then, Click the **clone** and **download** the simple page. 
 2. Unzip the file and run the **hugo.exe**.
-3. Click the **preview.bat**. Then, open a browser and enter 'http://localhost:1313/'. Your hugo website set up now.
+3. Go to your hugo file and run the **preview.bat**. Then, open a browser and enter 'http://localhost:1313/'. Your hugo website is set up now.
 
+## 2. Generate Deploy File
 
-## 2. Install Hugo 
-
-Go to [Install Hugo](https://github.com/gohugoio/hugo/releases) And download the .zip file like
-
-> hugo_0.72.0_Windows-64bit.zip
-
-Unzip to your hugo file and click the **hugo.exe**. The hugo set up now.
-
+![png](./userGuide/deployment.png)
+1. Go to your hugo file and run the **build.bat**. It will generate a **pubile** file. You can use the **pubile** for your deployment.
 
 ## 3. Add Themes
 
